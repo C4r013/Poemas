@@ -1,0 +1,63 @@
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {packages:['wordtree']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable(
+          [  ['phrase', 'size', 'value'],
+  			     ['ERES Tu más grande amor', 1, 8],
+ 			 			 ['ERES Tu más grande guía', 1, 8],
+             ['ERES Tu más grande paz', 1, 5,
+ 						 
+             ['ERES Tu forma de sentir', 1,5],
+             ['ERES Tu forma de querer', 1,5],
+             
+             ['ERES Luz incandecente', 1, 8],
+             ['ERES Luz ojos bonitos', 1, 8],
+             ['ERES Luz estelar',1, 8],
+ 						 ['ERES Luz eterna', 1, 8],
+             ['ERES Luz infinito', 1, 8],
+             
+
+ 						 ['ERES kryptonita', 1, 8],
+             ['ERES Arcoiris', 1, 8],
+             
+             ['ERES Tu Mejor versión', 1, 8],
+ 						 ['ERES Tu Mejor compañía', 1, 8],
+             ['ERES Tu Mejor equipo', 1, 8],
+ 						 ['ERES Tu Mejor consejera', 1, 8],
+             ['ERES Tu latido', 1, 8],
+ 						 ['ERES Tu universo', 1, 8],
+             ['ERES Guerrera', 1, 8],
+ 						 ['ERES Tu forma de ver la vida', 1, 8],
+             
+ 						 ['ERES Inalcanzable', 1, 8],
+             ['ERES Invencible', 1, 8],
+             ['ERES Arte', 1, 8],
+             ['ERES Vida', 1, 8],
+             ['ERES AMOR', 2, 8],
+ 						 ['ERES MUJER', 2, 8], 	
+          ]
+        );
+
+        var options = {
+            wordtree: {
+            format: 'implicit',
+            word: 'ERES',
+            colors: ['red', 'black', 'green']
+          }
+        };
+
+        var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wordtree_basic" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
